@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.css">
+	<link rel="stylesheet" href="css/media-queries.css"> </head>
+
+<body>
+	<div class="page-wrap">
+	<div class="content">
+		<div id="top-panel">
+			<div class="container">
+				<div class="row">
+					<ul class="navbar-top col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<li class="nl-logo"><a href="#"><span><img src="img/nl-logo.png" alt=""></span></a></li>
+						<li class="geo-pos"><a href="#"><span><img src="img/geo-pos.png" alt="">
+                        </span></a> <span class="your-city">Ваш город</span> </li>
+						<li class="touch-menu"><a href="#"><span><img src="img/touch-menu.png" alt=""></span></a></li>
+						<li class="search"><a href="#"><span><img src="img/search.png" alt=""></span></a></li>
+						<li class="log-in"><a href="#"><span><img src="img/log-in.png" alt=""></span></a></li>
+						<li class="basket"><a href="#"><span><img src="img/basket.png" alt=""></span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="top-green-line"> </div>
+		<div class="grey-panel">
+			<div class="container">
+				<a href="#" class="grey-panel-link">
+					<div class="top-arrow-cont gray-panel-box">
+						<div class="top-arrow"><img src="img/green-arrow.png" alt=""></div>
+					</div>
+					<div class="grey-panel-title bold"> Товари зі знижкою </div>
+				</a>
+			</div>
+		</div>
+		<div class="content-wrap">
+			<div class="container">
+				<div class="form-cont-wrap">
+					<h1 class="call-back-title bold">Ми Вам передзвонимо!</h1>
+					<div class="call-back-form-cont">
+						<form class="call-back-form">
+							<div class="name-inp-cont inp-cont"> <i class="name-inp-title inp-title">
+							Ваше ім'я:
+						</i>
+								<input type="text" class="name-inp cb-inp"> </div>
+							<div class="phone-inp-cont inp-cont"> <i class="phone-inp-title inp-title">
+							Телефон:
+						</i>
+								<input type="text" class="phone-inp cb-inp" placeholder="+38 (___)___-____"> </div>
+							<button type="button" class="call-back-btn">ЧЕКАЮ НА ДЗВІНОК</button>
+						</form>
+					</div>
+				</div>
+				<div class="callback-greet-wrap hide">
+					<h1 class="call-back-title bold">Дякуємо, Віталій</i>!</h1>
+					<div class="callback-caption">
+						Наші консультанти зателефонують<br> до Вас найближчим часом!
+					</div>
+					<ul class="nav-list">
+						<li><a href="#">Акции</a></li>
+						<li><a href="#">Новые поступления</a></li>
+						<li><a href="#">На главную</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div id="footer">
+			<div class="down-green-line support-num bold"> 0800-50-47-47 </div>
+			<div class="down-links-cont container">
+				<a href="#" class="down-link full-page"><img src="img/full-page.png" alt=""> </a>
+				<a href="#" class="down-link gplay"><img src="img/gplay.png" alt=""> </a>
+				<a href="#" class="down-link appstore"><img src="img/appstore.png" alt=""> </a>
+			</div>
+			<div class="copyright"> © Новая Линия 2003-2016 </div>
+			<div class="bottom-green-line"> </div>
+		</div>
+
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/jquery.maskedinput.js"></script>
+	<script>
+		$(function() {
+			$(".phone-inp").mask("+38 (999) 999-9999");
+
+		});
+	</script>
+	<script>
+		$('.call-back-btn').on('click', function(e) {
+			e.preventDefault;
+			$('.form-cont-wrap').addClass('hide');
+			$('.callback-greet-wrap').fadeIn(500).removeClass('hide');
+		})
+	</script>
+</body>
+
+</html>
